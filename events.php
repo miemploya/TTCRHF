@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events | The Tribe Called Roots Humanitarian Foundation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- International Standard Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        :root {
+            --brand-emerald: #059669;
+        }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .logo-svg { width: 100%; height: 100%; fill: currentColor; }
+        .flyer-card { overflow: hidden; position: relative; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .flyer-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-lg border-b border-slate-200 dark:bg-slate-900/95 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24 items-center">
+                <a href="index.php" class="flex items-center gap-4 cursor-pointer">
+                    <!-- RECREATED OFFICIAL LOGO AS IMG -->
+                    <div class="w-16 h-16 transition-colors duration-300 rounded-full overflow-hidden border-2 border-slate-900 dark:border-white">
+                        <img src="logo.jpg" alt="TTCRHF Logo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-extrabold text-xl tracking-tight text-slate-900 dark:text-white leading-none font-heading uppercase">TTCRHF</span>
+                        <span class="text-[9px] font-bold text-emerald-600 dark:text-emerald-500 tracking-[0.1em] uppercase">The Tribe Called Roots</span>
+                    </div>
+                </a>
+                
+                <div class="hidden md:flex space-x-8 font-semibold text-slate-600 dark:text-slate-400 text-sm items-center">
+                    <a href="index.php" class="hover:text-emerald-600 transition-all py-2">Home</a>
+                    <a href="about.php" class="hover:text-emerald-600 transition-all py-2">About Us</a>
+                    <a href="events.php" class="text-emerald-600 border-b-2 border-emerald-600 py-2">Events</a>
+                    <a href="projects.php" class="hover:text-emerald-600 transition-all py-2">Projects</a>
+                    <a href="gallery.php" class="hover:text-emerald-600 transition-all py-2">Gallery</a>
+                    
+                    <button onclick="toggleTheme()" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-emerald-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 200 200">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="pt-24">
+        
+        <!-- Header Section -->
+        <section class="py-20 bg-white dark:bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold tracking-widest uppercase text-sm">Our Calendar</span>
+                <h1 class="text-4xl md:text-7xl font-extrabold mt-4 mb-6 dark:text-white leading-tight font-heading">Movements of Change</h1>
+                <p class="text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto font-light">
+                    Transforming communities in Benin City through education, health, and social welfare initiatives planned for 2026.
+                </p>
+            </div>
+        </section>
+
+        <!-- Events Grid -->
+        <section class="py-12 bg-slate-50 dark:bg-slate-900/50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-12">
+
+                    <!-- Event 1: Eye Clinic -->
+                    <div class="flyer-card bg-slate-900 text-white rounded-[3rem] shadow-2xl flex flex-col">
+                        <div class="relative h-72 overflow-hidden">
+                            <!-- Image of African person with glasses -->
+                            <img src="https://images.unsplash.com/photo-1507152832244-10d45c7eda57?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Medicated Eye Care" class="w-full h-full object-cover opacity-80">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-8">
+                                <span class="bg-emerald-600 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded">Medical Outreach</span>
+                                <h2 class="text-3xl font-bold mt-2 font-heading">1-Week Free Eye Clinic</h2>
+                            </div>
+                        </div>
+                        <div class="p-10 lg:p-12 flex-grow">
+                            <div class="grid grid-cols-2 gap-6 mb-8 text-left">
+                                <div>
+                                    <p class="text-[10px] font-bold text-emerald-400 uppercase mb-1">Date</p>
+                                    <p class="text-lg font-bold">April 13th – 17th, 2026</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold leading-tight">Miemploya Complex, 19 Adesuwa Road, GRA, Benin City</p>
+                                </div>
+                            </div>
+                            <div class="space-y-4 mb-10 text-left">
+                                <p class="text-slate-300 text-sm italic">Restoring vision for a brighter future. Specialist eye doctors will provide tests and medicated glasses.</p>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[11px] font-extrabold uppercase text-emerald-400">
+                                    <div class="flex items-center gap-2"><div class="w-2 h-2 bg-emerald-500 rounded-full"></div> Free Eye Tests</div>
+                                    <div class="flex items-center gap-2"><div class="w-2 h-2 bg-emerald-500 rounded-full"></div> Medicated Glasses</div>
+                                    <div class="flex items-center gap-2"><div class="w-2 h-2 bg-emerald-500 rounded-full"></div> Free Medications</div>
+                                    <div class="flex items-center gap-2"><div class="w-2 h-2 bg-emerald-500 rounded-full"></div> Specialists Consult</div>
+                                </div>
+                            </div>
+                            <div class="pt-8 border-t border-white/10 text-left">
+                                <p class="text-[10px] font-bold text-slate-500 uppercase mb-2">Support & Partnership</p>
+                                <p class="text-lg font-bold font-heading tracking-tight">+234 903 716 2950 | +234 809 200 0080</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 2: Web Programming (Modern Tech Aesthetic) -->
+                    <div class="flyer-card bg-slate-950 text-white rounded-[3rem] shadow-2xl flex flex-col border border-emerald-500/20">
+                        <div class="relative h-72 overflow-hidden bg-slate-900">
+                            <!-- Image of African students coding -->
+                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tech Training" class="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <div class="absolute bottom-6 left-8">
+                                <div class="flex gap-2 mb-2">
+                                    <span class="bg-emerald-500 text-slate-950 text-[10px] font-black uppercase px-3 py-1 rounded-full">Frontend</span>
+                                    <span class="bg-emerald-500 text-slate-950 text-[10px] font-black uppercase px-3 py-1 rounded-full">Backend</span>
+                                </div>
+                                <h2 class="text-4xl font-black font-heading tracking-tighter uppercase italic leading-none">Web <span class="text-emerald-400 underline decoration-2 underline-offset-4">Programming</span></h2>
+                            </div>
+                        </div>
+                        <div class="p-10 lg:p-12 flex-grow text-left">
+                            <div class="grid grid-cols-2 gap-8 mb-10">
+                                <div class="p-4 bg-slate-900 border border-white/5 rounded-2xl">
+                                    <p class="text-[10px] font-bold text-emerald-400 uppercase mb-1">July 2026</p>
+                                    <p class="text-xl font-black font-heading leading-none">13th – 24th</p>
+                                </div>
+                                <div class="p-4 bg-slate-900 border border-white/5 rounded-2xl text-center">
+                                    <p class="text-[10px] font-bold text-emerald-400 uppercase mb-1">Slots</p>
+                                    <p class="text-xl font-black font-heading leading-none">100 Students</p>
+                                </div>
+                            </div>
+                            <div class="space-y-4 mb-10">
+                                <p class="text-slate-400 text-sm leading-relaxed">High-level software engineering training for rural talent at <span class="text-white font-bold">Miemploya HR</span>. Empowering the digital roots.</p>
+                                <div class="flex gap-6 text-[11px] font-black uppercase tracking-widest text-emerald-400">
+                                    <span>● Reg. Free</span>
+                                    <span>● Training Free</span>
+                                </div>
+                            </div>
+                            <div class="pt-8 border-t border-white/10">
+                                <p class="text-[10px] font-bold text-slate-500 uppercase mb-3 tracking-widest">Venue & Contact</p>
+                                <p class="text-xs text-slate-300 mb-2 font-medium">19 Adesuwa Road, GRA, Benin City, Edo State.</p>
+                                <p class="text-lg font-black font-heading text-white">+234 903 716 2950 | +234 809 200 0080</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 3: HIV Awareness -->
+                    <div class="flyer-card bg-white dark:bg-slate-900 text-slate-900 dark:text-white rounded-[3rem] shadow-xl flex flex-col border border-slate-100 dark:border-slate-800">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover">
+                            <div class="absolute bottom-6 left-8">
+                                <span class="bg-rose-600 text-white text-[10px] font-bold uppercase px-3 py-1 rounded">Awareness Campaign</span>
+                                <h2 class="text-3xl font-bold mt-2 font-heading">HIV/AIDS Counseling</h2>
+                            </div>
+                        </div>
+                        <div class="p-10 text-left flex-grow">
+                            <div class="mb-6">
+                                <p class="text-[10px] font-bold text-rose-600 uppercase mb-1">Date Period</p>
+                                <p class="text-xl font-bold">March 23rd – 27th, 2026</p>
+                            </div>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-8">
+                                Professional counseling and community awareness initiatives to foster a healthier and more informed society.
+                            </p>
+                            <div class="pt-8 border-t border-slate-100 dark:border-slate-800">
+                                <p class="text-sm font-bold text-slate-900 dark:text-white tracking-widest font-heading">+234 903 716 2950</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 4: Orphanage Visitation -->
+                    <div class="flyer-card bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white rounded-[3rem] shadow-xl flex flex-col border border-slate-200 dark:border-slate-700">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover opacity-80">
+                            <div class="absolute inset-0 bg-emerald-600/5"></div>
+                            <div class="absolute top-6 right-8">
+                                <span class="bg-emerald-600 text-white text-[10px] font-bold px-4 py-1.5 rounded-full shadow-lg">Coming Soon</span>
+                            </div>
+                            <div class="absolute bottom-6 left-8">
+                                <span class="bg-emerald-600 text-white text-[10px] font-bold uppercase px-3 py-1 rounded">Social Welfare</span>
+                                <h2 class="text-3xl font-bold mt-2 font-heading">Mid-Year Distribution</h2>
+                            </div>
+                        </div>
+                        <div class="p-10 text-left flex-grow">
+                            <div class="mb-6">
+                                <p class="text-[10px] font-bold text-emerald-600 uppercase mb-1">Visit Dates</p>
+                                <p class="text-xl font-bold">June 26th & 27th, 2026</p>
+                            </div>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-8">
+                                Support our orphanage outreach as we distribute essential resources to communities in need across Edo State.
+                            </p>
+                            <div class="pt-8 border-t border-slate-200 dark:border-slate-700">
+                                <p class="text-sm font-bold text-emerald-600 font-heading">+234 903 716 2950 | +234 809 200 0080</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Get in Touch -->
+        <section class="py-24 bg-emerald-950 text-white">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-8 font-heading">Partner with the Tribe</h2>
+                <p class="text-xl text-emerald-100/70 mb-12 font-light">Your support, whether through volunteering or donations, amplifies our reach in Edo State.</p>
+                <button class="bg-white text-emerald-950 px-12 py-5 rounded-full font-bold text-lg hover:bg-emerald-50 transition shadow-2xl">Download Event Schedule</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 pt-24 pb-12 transition-colors duration-300 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 text-left">
+            <div class="grid md:grid-cols-4 gap-16 mb-16">
+                <div class="col-span-1">
+                    <div class="flex items-center gap-4 mb-8 text-white">
+                        <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-white">
+                            <img src="logo.jpg" alt="TTCRHF Logo" class="w-full h-full object-cover">
+                        </div>
+                        <span class="font-extrabold text-xl tracking-tight text-white uppercase font-heading">TTCRHF</span>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <h4 class="text-white font-bold text-lg mb-8 uppercase text-xs font-heading">Contacts</h4>
+                    <p class="text-sm font-light leading-relaxed">📍 Benin City, Edo State.<br>📞 +234 903 716 2950</p>
+                </div>
+                <div class="col-span-1">
+                    <h4 class="text-white font-bold text-lg mb-8 uppercase text-xs font-heading">Foundation</h4>
+                    <p class="text-sm font-light leading-relaxed">Our History<br>CBT Initiative<br>Economic Growth</p>
+                </div>
+                <div class="col-span-1">
+                    <h4 class="text-white font-bold text-lg mb-8 uppercase text-xs font-heading">Official Website</h4>
+                    <p class="text-sm font-light text-emerald-400 underline italic font-heading">thetribecalledroots.org</p>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-white/5 text-[10px] font-bold tracking-[0.3em] uppercase text-center">
+                &copy; 2026 The Tribe Called Roots Humanitarian Foundation.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+        }
+    </script>
+</body>
+</html>

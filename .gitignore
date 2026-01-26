@@ -1,0 +1,42 @@
+# Database connection files
+includes/db_connect.php
+config/database.php
+
+# Session and temporary files
+*.tmp
+*.temp
+sessions/
+tmp/
+
+# Log files
+*.log
+logs/
+error_log
+
+# Uploaded files
+uploads/*
+!uploads/.htaccess
+
+# Backup files
+backups/
+*.sql
+*.backup
+*.bak
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependency directories
+/vendor/
+node_modules/
+
+# Environment files
+.env
