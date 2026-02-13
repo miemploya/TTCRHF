@@ -42,7 +42,7 @@
                 <a href="index.php" class="flex items-center gap-4 cursor-pointer">
                     <!-- RECREATED OFFICIAL LOGO AS IMG -->
                     <div class="w-16 h-16 transition-colors duration-300 rounded-full overflow-hidden border-2 border-slate-900 dark:border-white">
-                        <img src="logo.jpg" alt="TTCRHF Logo" class="w-full h-full object-cover">
+                        <img src="ttcrhf_logo.png?v=2" alt="TTCRHF Logo" class="w-full h-full object-cover">
                     </div>
                     <div class="flex flex-col">
                         <span class="font-extrabold text-xl tracking-tight text-slate-900 dark:text-white leading-none font-heading uppercase">TTCRHF</span>
@@ -118,7 +118,7 @@
                             </div>
                             <div class="pt-8 border-t border-white/10 text-left">
                                 <p class="text-[10px] font-bold text-slate-500 uppercase mb-2">Support & Partnership</p>
-                                <p class="text-lg font-bold font-heading tracking-tight">+234 903 716 2950 | +234 809 200 0080</p>
+                                <p class="text-lg font-bold font-heading tracking-tight">+234 809 200 0080 | +234 809 200 0080</p>
                             </div>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
                             <div class="pt-8 border-t border-white/10">
                                 <p class="text-[10px] font-bold text-slate-500 uppercase mb-3 tracking-widest">Venue & Contact</p>
                                 <p class="text-xs text-slate-300 mb-2 font-medium">19 Adesuwa Road, GRA, Benin City, Edo State.</p>
-                                <p class="text-lg font-black font-heading text-white">+234 903 716 2950 | +234 809 200 0080</p>
+                                <p class="text-lg font-black font-heading text-white">+234 809 200 0080 | +234 809 200 0080</p>
                             </div>
                         </div>
                     </div>
@@ -181,7 +181,7 @@
                                 Professional counseling and community awareness initiatives to foster a healthier and more informed society.
                             </p>
                             <div class="pt-8 border-t border-slate-100 dark:border-slate-800">
-                                <p class="text-sm font-bold text-slate-900 dark:text-white tracking-widest font-heading">+234 903 716 2950</p>
+                                <p class="text-sm font-bold text-slate-900 dark:text-white tracking-widest font-heading">+234 809 200 0080</p>
                             </div>
                         </div>
                     </div>
@@ -208,7 +208,41 @@
                                 Support our orphanage outreach as we distribute essential resources to communities in need across Edo State.
                             </p>
                             <div class="pt-8 border-t border-slate-200 dark:border-slate-700">
-                                <p class="text-sm font-bold text-emerald-600 font-heading">+234 903 716 2950 | +234 809 200 0080</p>
+                                <p class="text-sm font-bold text-emerald-600 font-heading">+234 809 200 0080 | +234 809 200 0080</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 5: Prison Outreach -->
+                    <div class="flyer-card bg-slate-900 text-white rounded-[3rem] shadow-2xl flex flex-col border border-amber-500/20">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Prison Outreach" class="w-full h-full object-cover opacity-60">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+                            <div class="absolute top-6 right-8">
+                                <span class="bg-amber-500 text-slate-950 text-[10px] font-bold px-4 py-1.5 rounded-full shadow-lg animate-pulse">Coming Soon</span>
+                            </div>
+                            <div class="absolute bottom-6 left-8">
+                                <span class="bg-amber-600 text-white text-[10px] font-bold uppercase px-3 py-1 rounded">Community Outreach</span>
+                                <h2 class="text-3xl font-bold mt-2 font-heading">Prison Outreach</h2>
+                            </div>
+                        </div>
+                        <div class="p-10 text-left flex-grow">
+                            <div class="mb-6">
+                                <p class="text-[10px] font-bold text-amber-400 uppercase mb-1">Date</p>
+                                <p class="text-xl font-bold">To Be Announced</p>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-8">
+                                Bringing hope, counseling, and essential supplies to incarcerated individuals. TTCRHF believes in rehabilitation, dignity, and second chances for all.
+                            </p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[11px] font-extrabold uppercase text-amber-400 mb-8">
+                                <div class="flex items-center gap-2"><div class="w-2 h-2 bg-amber-500 rounded-full"></div> Counseling Sessions</div>
+                                <div class="flex items-center gap-2"><div class="w-2 h-2 bg-amber-500 rounded-full"></div> Essential Supplies</div>
+                                <div class="flex items-center gap-2"><div class="w-2 h-2 bg-amber-500 rounded-full"></div> Rehabilitation Support</div>
+                                <div class="flex items-center gap-2"><div class="w-2 h-2 bg-amber-500 rounded-full"></div> Spiritual Guidance</div>
+                            </div>
+                            <div class="pt-8 border-t border-white/10">
+                                <p class="text-[10px] font-bold text-slate-500 uppercase mb-2">Support & Contact</p>
+                                <p class="text-lg font-bold font-heading tracking-tight">+234 809 200 0080</p>
                             </div>
                         </div>
                     </div>
@@ -234,14 +268,14 @@
                 <div class="col-span-1">
                     <div class="flex items-center gap-4 mb-8 text-white">
                         <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-white">
-                            <img src="logo.jpg" alt="TTCRHF Logo" class="w-full h-full object-cover">
+                            <img src="ttcrhf_logo.png?v=2" alt="TTCRHF Logo" class="w-full h-full object-cover">
                         </div>
                         <span class="font-extrabold text-xl tracking-tight text-white uppercase font-heading">TTCRHF</span>
                     </div>
                 </div>
                 <div class="col-span-1">
                     <h4 class="text-white font-bold text-lg mb-8 uppercase text-xs font-heading">Contacts</h4>
-                    <p class="text-sm font-light leading-relaxed">📍 Benin City, Edo State.<br>📞 +234 903 716 2950</p>
+                    <p class="text-sm font-light leading-relaxed">📍 2/4, Christ Coming Drive, Ulemo, Benin City, Edo State.<br>📞 +234 809 200 0080</p>
                 </div>
                 <div class="col-span-1">
                     <h4 class="text-white font-bold text-lg mb-8 uppercase text-xs font-heading">Foundation</h4>

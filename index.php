@@ -54,7 +54,7 @@
                 <div class="flex items-center gap-4 cursor-pointer" onclick="navigateTo('home')">
                     <!-- RECREATED OFFICIAL LOGO AS IMG -->
                     <div class="w-16 h-16 transition-colors duration-300 rounded-full overflow-hidden border-2 border-slate-900 dark:border-white">
-                        <img src="logo.jpg" alt="TTCRHF Logo" class="w-full h-full object-cover">
+                        <img src="ttcrhf_logo.png?v=2" alt="TTCRHF Logo" class="w-full h-full object-cover">
                     </div>
                     <div class="flex flex-col">
                         <span class="font-extrabold text-xl tracking-tight text-slate-900 dark:text-white leading-none">TTCRHF</span>
@@ -122,7 +122,7 @@
                         <p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Watch how we are transforming rural landscapes through the Tribe Called Roots mission.</p>
                     </div>
                     <div class="video-container shadow-2xl dark:shadow-emerald-900/20">
-                        <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/d57ZTGnjFuE" title="TTCRHF Intro Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/W4tmxw1mORI" title="TTCRHF Intro Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </section>
@@ -209,7 +209,7 @@
                             <div class="relative z-10 flex items-center gap-8 md:gap-12 animate-float">
                                 <!-- TTCRHF Logo -->
                                 <div class="w-32 h-32 md:w-40 md:h-40 bg-white dark:bg-slate-800 rounded-3xl shadow-2xl flex items-center justify-center p-2 border-4 border-emerald-500/20">
-                                    <img src="ttcrhf_logo_partner.jpg" class="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal" alt="TTCRHF">
+                                    <img src="ttcrhf_logo.png?v=2" class="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal" alt="TTCRHF">
                                 </div>
                                 <!-- X Icon -->
                                 <div class="text-slate-300 dark:text-slate-600">
@@ -307,15 +307,15 @@
                                 <div class="bg-emerald-50 dark:bg-emerald-900/20 p-8 rounded-3xl border border-emerald-100 dark:border-emerald-800/30">
                                     <h4 class="font-bold text-emerald-900 dark:text-emerald-100 mb-4 text-xl">Headquarters</h4>
                                     <p class="text-emerald-800 dark:text-emerald-200 leading-relaxed">
-                                        12 Roots Way,<br>
-                                        Benin City, Edo State,<br>
-                                        Nigeria
+                                        2/4, Christ Coming Drive,<br>
+                                        Ulemo, Benin City,<br>
+                                        Edo State, Nigeria
                                     </p>
                                 </div>
                                 <div class="bg-blue-50 dark:bg-blue-900/20 p-8 rounded-3xl border border-blue-100 dark:border-blue-800/30">
                                     <h4 class="font-bold text-blue-900 dark:text-blue-100 mb-4 text-xl">Direct Contact</h4>
-                                    <p class="text-blue-800 dark:text-blue-200 leading-relaxed mb-2"><strong>Email:</strong> hq@ttcrhf.org</p>
-                                    <p class="text-blue-800 dark:text-blue-200 leading-relaxed"><strong>Phone:</strong> +234 800-ROOTS-INFO</p>
+                                    <p class="text-blue-800 dark:text-blue-200 leading-relaxed mb-2"><strong>Email:</strong> ttcrhf@mail.com</p>
+                                    <p class="text-blue-800 dark:text-blue-200 leading-relaxed"><strong>Phone:</strong> +234 809 200 0080</p>
                                 </div>
                             </div>
                         </div>
@@ -527,64 +527,80 @@
             <div class="max-w-5xl mx-auto px-4 -mt-12 relative z-20 pb-24">
                 <div class="bg-white dark:bg-slate-900 rounded-[3rem] shadow-2xl border border-slate-100 dark:border-slate-800 p-8 md:p-12">
                     
-                    <!-- Impact Grid -->
+                    <!-- Impact Tiers (visual reference) -->
                     <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-8 text-center">Choose Your Impact</h3>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-                        <button class="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 active:scale-95 transition-all p-6 rounded-2xl group text-center">
+                        <button type="button" onclick="selectImpactTier('$10 - Edu-Kit')" class="impact-tier bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 active:scale-95 transition-all p-6 rounded-2xl group text-center">
                             <span class="block text-3xl font-extrabold text-emerald-600 dark:text-emerald-400 mb-2 group-hover:scale-110 transition-transform">$10</span>
                             <span class="text-xs font-semibold text-slate-500 group-hover:text-emerald-700 dark:group-hover:text-emerald-300">Edu-Kit (Stationery)</span>
                         </button>
-                        <button class="bg-emerald-600 text-white shadow-lg shadow-emerald-200 dark:shadow-emerald-900/50 scale-105 transition-all p-6 rounded-2xl text-center relative overflow-hidden">
-                            <div class="absolute inset-0 bg-white/20 translate-y-full hover:translate-y-0 transition-transform"></div>
-                            <span class="block text-3xl font-extrabold mb-2">$25</span>
-                            <span class="text-xs font-semibold text-emerald-50">CBT Exam Fee</span>
+                        <button type="button" onclick="selectImpactTier('$25 - CBT Exam Fee')" class="impact-tier bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 active:scale-95 transition-all p-6 rounded-2xl group text-center">
+                            <span class="block text-3xl font-extrabold text-emerald-600 dark:text-emerald-400 mb-2 group-hover:scale-110 transition-transform">$25</span>
+                            <span class="text-xs font-semibold text-slate-500 group-hover:text-emerald-700 dark:group-hover:text-emerald-300">CBT Exam Fee</span>
                         </button>
-                        <button class="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 active:scale-95 transition-all p-6 rounded-2xl group text-center">
+                        <button type="button" onclick="selectImpactTier('$50 - Orphanage Meal Plan')" class="impact-tier bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 active:scale-95 transition-all p-6 rounded-2xl group text-center">
                             <span class="block text-3xl font-extrabold text-emerald-600 dark:text-emerald-400 mb-2 group-hover:scale-110 transition-transform">$50</span>
                             <span class="text-xs font-semibold text-slate-500 group-hover:text-emerald-700 dark:group-hover:text-emerald-300">Orphanage Meal Plan</span>
                         </button>
-                        <button class="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 active:scale-95 transition-all p-6 rounded-2xl group text-center">
+                        <button type="button" onclick="selectImpactTier('$100 - SME Micro-Grant')" class="impact-tier bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 active:scale-95 transition-all p-6 rounded-2xl group text-center">
                             <span class="block text-3xl font-extrabold text-emerald-600 dark:text-emerald-400 mb-2 group-hover:scale-110 transition-transform">$100</span>
                             <span class="text-xs font-semibold text-slate-500 group-hover:text-emerald-700 dark:group-hover:text-emerald-300">SME Micro-Grant</span>
                         </button>
                     </div>
 
-                    <!-- Custom Amount Input -->
-                    <div class="mb-12 relative max-w-lg mx-auto">
-                        <label class="block text-sm font-bold text-slate-500 mb-2 text-center uppercase tracking-wider">Or Enter Custom Amount</label>
-                        <div class="relative">
-                            <span class="absolute left-6 top-1/2 -translate-y-1/2 text-2xl font-bold text-slate-400">$</span>
-                            <input type="number" placeholder="250" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full py-4 pl-12 pr-6 text-2xl font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all text-center">
-                        </div>
-                    </div>
-
                     <div class="h-px bg-slate-100 dark:bg-slate-800 my-10"></div>
 
-                    <!-- Payment Methods (Visual Only) -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                        <div>
-                            <h4 class="font-bold text-slate-900 dark:text-white mb-4">Payment Method</h4>
-                            <div class="flex gap-4">
-                                <button class="flex-1 bg-white dark:bg-slate-800 border-2 border-emerald-500 text-emerald-700 dark:text-emerald-400 py-3 rounded-xl font-bold flex items-center justify-center gap-2 shadow-sm">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" /><path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd" /></svg>
-                                    Card
-                                </button>
-                                <button class="flex-1 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-500 py-3 rounded-xl font-semibold hover:bg-slate-100 transition">Transfer</button>
-                                <button class="flex-1 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-500 py-3 rounded-xl font-semibold hover:bg-slate-100 transition">Crypto</button>
-                            </div>
-                        </div>
-                        <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-2xl flex items-center gap-4 border border-emerald-100 dark:border-emerald-800/30">
-                            <div class="p-3 bg-white dark:bg-emerald-900/50 rounded-full text-emerald-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                    <!-- Donation Inquiry Form -->
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2 text-center font-heading">Donation Inquiry Form</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-center mb-10 text-sm">Fill in your details below and our team will contact you with instructions on how to complete your donation.</p>
+
+                    <form id="donate-form" class="space-y-6 max-w-2xl mx-auto">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Full Name <span class="text-red-500">*</span></label>
+                                <input type="text" name="donor_name" required class="w-full px-5 py-3.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition text-slate-900 dark:text-white" placeholder="Your full name">
                             </div>
                             <div>
-                                <p class="text-xs font-bold uppercase text-emerald-600 tracking-wider mb-1">Secure Transaction</p>
-                                <p class="text-xs text-slate-500 dark:text-emerald-200/70">Encrypted via 256-bit SSL. 100% Tax Deductible.</p>
+                                <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Email Address <span class="text-red-500">*</span></label>
+                                <input type="email" name="donor_email" required class="w-full px-5 py-3.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition text-slate-900 dark:text-white" placeholder="you@example.com">
                             </div>
                         </div>
-                    </div>
-                    
-                    <button onclick="triggerThankYou()" class="w-full bg-emerald-600 text-white mt-12 py-5 rounded-full font-bold text-xl hover:bg-emerald-700 transition shadow-xl shadow-emerald-200 dark:shadow-emerald-900/20 transform hover:-translate-y-1">Confirm Donation</button>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Phone Number <span class="text-red-500">*</span></label>
+                                <input type="tel" name="donor_phone" required class="w-full px-5 py-3.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition text-slate-900 dark:text-white" placeholder="+234 800 000 0000">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Location (City, Country) <span class="text-red-500">*</span></label>
+                                <input type="text" name="donor_location" required class="w-full px-5 py-3.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition text-slate-900 dark:text-white" placeholder="Benin City, Nigeria">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Amount You Wish to Donate <span class="text-red-500">*</span></label>
+                            <div class="relative">
+                                <span class="absolute left-5 top-1/2 -translate-y-1/2 text-xl font-bold text-slate-400">$</span>
+                                <input type="text" name="donor_amount" id="donate-amount-input" required class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl py-3.5 pl-12 pr-6 text-xl font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all" placeholder="Enter amount or select a tier above">
+                            </div>
+                        </div>
+
+                        <!-- Consent Checkbox -->
+                        <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-2xl border border-emerald-100 dark:border-emerald-800/30">
+                            <label class="flex items-start gap-4 cursor-pointer">
+                                <input type="checkbox" name="donor_consent" required class="mt-1 w-5 h-5 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500 cursor-pointer flex-shrink-0">
+                                <span class="text-sm text-slate-700 dark:text-emerald-200 leading-relaxed">
+                                    I agree to allow <strong>The Tribe Called Roots Humanitarian Foundation (TTCRHF)</strong> to contact me via phone call or email to provide instructions on how to complete my donation. <span class="text-red-500">*</span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" id="donate-submit-btn" class="w-full bg-emerald-600 text-white py-5 rounded-full font-bold text-xl hover:bg-emerald-700 transition shadow-xl shadow-emerald-200 dark:shadow-emerald-900/20 transform hover:-translate-y-1 flex items-center justify-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            Submit Donation Inquiry
+                        </button>
+
+                        <p class="text-center text-xs text-slate-400 dark:text-slate-500 mt-4">Your details will be sent securely to <strong>ttcrhf@mail.com</strong>. Our team will reach out to guide you through the donation process.</p>
+                    </form>
                 </div>
             </div>
         </div>
@@ -599,7 +615,7 @@
                 <div class="col-span-1 md:col-span-1">
                     <div class="flex items-center gap-4 mb-8">
                         <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-white">
-                            <img src="logo.jpg" alt="TTCRHF Logo" class="w-full h-full object-cover">
+                            <img src="ttcrhf_logo.png?v=2" alt="TTCRHF Logo" class="w-full h-full object-cover">
                         </div>
                         <span class="font-extrabold text-xl tracking-tight text-white uppercase font-heading">TTCRHF</span>
                     </div>
@@ -610,9 +626,9 @@
                 <div class="col-span-1">
                     <h4 class="text-white font-bold text-lg mb-8 uppercase tracking-widest text-xs font-heading">Contact Info</h4>
                     <ul class="space-y-4 text-sm font-light">
-                        <li class="flex items-start gap-3">📍 HQ: 12 Roots Way, Benin City, Nigeria.</li>
-                        <li class="flex items-start gap-3">✉️ hq@ttcrhf.org</li>
-                        <li class="flex items-start gap-3">📞 +234 800-ROOTS-INFO</li>
+                        <li class="flex items-start gap-3">📍 2/4, Christ Coming Drive, Ulemo, Benin City, Edo State.</li>
+                        <li class="flex items-start gap-3">✉️ ttcrhf@mail.com</li>
+                        <li class="flex items-start gap-3">📞 +234 809 200 0080</li>
                     </ul>
                 </div>
 
@@ -631,7 +647,6 @@
                 <div class="col-span-1">
                     <h4 class="text-white font-bold text-lg mb-8 uppercase tracking-widest text-xs font-heading">Transparency</h4>
                     <p class="text-xs mb-4 font-light">Corporate Affairs Commission Registered.</p>
-                    <p class="text-xs font-light">Tax ID: 2026-TTCRHF-VAT</p>
                 </div>
             </div>
 
@@ -696,6 +711,69 @@
         function triggerThankYou() {
             showModal("Roots Support", "Redirecting you to our secure payment gateway. Your contribution helps bridge the gap for rural communities in Edo State.");
         }
+
+        // Donation tier selection
+        function selectImpactTier(tier) {
+            const amountInput = document.getElementById('donate-amount-input');
+            if (amountInput) {
+                amountInput.value = tier;
+                amountInput.focus();
+                // Highlight the selected tier
+                document.querySelectorAll('.impact-tier').forEach(btn => {
+                    btn.classList.remove('ring-2', 'ring-emerald-500', 'border-emerald-500');
+                });
+                event.currentTarget.classList.add('ring-2', 'ring-emerald-500', 'border-emerald-500');
+            }
+        }
+
+        // Donate form AJAX submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const donateForm = document.getElementById('donate-form');
+            if (donateForm) {
+                donateForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const submitBtn = document.getElementById('donate-submit-btn');
+                    const originalHTML = submitBtn.innerHTML;
+                    submitBtn.innerHTML = '<svg class="animate-spin h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path></svg> Submitting...';
+                    submitBtn.disabled = true;
+                    
+                    const formData = new FormData(donateForm);
+                    // Ensure consent is sent
+                    if (!donateForm.querySelector('[name="donor_consent"]').checked) {
+                        showModal('Required', 'You must agree to allow TTCRHF to contact you before submitting.');
+                        submitBtn.innerHTML = originalHTML;
+                        submitBtn.disabled = false;
+                        return;
+                    }
+                    formData.append('donor_consent', 'yes');
+                    
+                    fetch('donate_handler.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            showModal('Thank You! 🌱', data.message);
+                            donateForm.reset();
+                            document.querySelectorAll('.impact-tier').forEach(btn => {
+                                btn.classList.remove('ring-2', 'ring-emerald-500', 'border-emerald-500');
+                            });
+                        } else {
+                            showModal('Notice', data.message);
+                        }
+                        submitBtn.innerHTML = originalHTML;
+                        submitBtn.disabled = false;
+                    })
+                    .catch(error => {
+                        showModal('Error', 'Something went wrong. Please try again or contact us directly at ttcrhf@mail.com');
+                        submitBtn.innerHTML = originalHTML;
+                        submitBtn.disabled = false;
+                    });
+                });
+            }
+        });
 
         function showModal(title, text) {
             document.getElementById('modal-title').innerText = title;

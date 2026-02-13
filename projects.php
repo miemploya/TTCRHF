@@ -40,7 +40,7 @@
                 <a href="index.php" class="flex items-center gap-4 cursor-pointer">
                     <!-- RECREATED OFFICIAL LOGO AS IMG -->
                     <div class="w-16 h-16 transition-colors duration-300 rounded-full overflow-hidden border-2 border-slate-900 dark:border-white">
-                        <img src="logo.jpg" alt="TTCRHF Logo" class="w-full h-full object-cover">
+                        <img src="ttcrhf_logo.png?v=2" alt="TTCRHF Logo" class="w-full h-full object-cover">
                     </div>
                     <div class="flex flex-col">
                         <span class="font-extrabold text-xl tracking-tight text-slate-900 dark:text-white leading-none font-heading uppercase">TTCRHF</span>
@@ -90,14 +90,14 @@
                 <div class="col-span-1">
                     <div class="flex items-center gap-4 mb-8 text-white">
                         <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-white">
-                            <img src="logo.jpg" alt="TTCRHF Logo" class="w-full h-full object-cover">
+                            <img src="ttcrhf_logo.png?v=2" alt="TTCRHF Logo" class="w-full h-full object-cover">
                         </div>
                         <span class="font-extrabold text-xl tracking-tight text-white uppercase font-heading">TTCRHF</span>
                     </div>
                 </div>
                 <div class="col-span-1">
                     <h4 class="text-white font-bold text-lg mb-8 uppercase text-xs font-heading">Contacts</h4>
-                    <p class="text-sm font-light leading-relaxed">📍 Benin City, Edo State.<br>📞 +234 903 716 2950</p>
+                    <p class="text-sm font-light leading-relaxed">📍 2/4, Christ Coming Drive, Ulemo, Benin City, Edo State.<br>📞 +234 809 200 0080</p>
                 </div>
                 <div class="col-span-1">
                     <h4 class="text-white font-bold text-lg mb-8 uppercase text-xs font-heading">Legacy</h4>
