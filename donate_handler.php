@@ -30,6 +30,15 @@ if (!$consent) {
     exit;
 }
 
+// Database insertion
+require_once __DIR__ . '/includes/db_connect.php';
+try {
+    $stmt = $pdo->prepare("INSERT INTO donation_inquiries (full_name, email, phone, location, amount_tier, status) VALUES (?, ?, ?, ?, ?, 'pending')");
+    $stmt->execute([$name, $email, $phone, $location, $amount]);
+} catch (PDOException $e) {
+    error_log("Failed to insert inquiry: " . $e->getMessage());
+}
+
 // Compose email
 $to      = 'ttcrhf@mail.com';
 $subject = 'New Donation Inquiry from ' . $name;
