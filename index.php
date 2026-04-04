@@ -1008,7 +1008,7 @@ $partner_desc = $site_settings['home_partnership_desc'] ?? '<p>We are proud to a
                             .then(res => res.json())
                             .then(data => {
                                 if(data.success) {
-                                    showModal('Thank You! 🌱', 'Your donation was successful. We appreciate your support for Edo State.');
+                                    showModal('Thank You! 🌱', 'Your donation was successful. We appreciate your support.');
                                     donateForm.reset();
                                 } else {
                                     showModal('Notice', 'Payment completed but verification failed.');
